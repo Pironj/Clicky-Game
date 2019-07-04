@@ -7,10 +7,13 @@
   height: 100%;
   display: flex;
   flex-flow: row wrap;
-  padding: 20px;
+  padding: 25px;
   justify-content: space-around;
   align-content: flex-start;
   overflow: auto;
+  margin-left: 21%;
+  margin-right: 21%;
+  margin-bottom: 10%;
 }
 
 .App-logo {
