@@ -49,8 +49,18 @@ class App extends Component {
   // alert the user - like game over
   // reset their current score to 0 and gamedata to be reset/make all clicked properties to be false
   endGame = (gameData) => {
+    const { score } = this.state;
+    let newScore = 0;
+    newScore = score;
+    const newShuffledGameData = gameData;
+    this.shuffle(newShuffledGameData);
 
+    this.setState({
+      GameData: newShuffledGameData,
+      score: newScore
+    });
   }
+  
   // continue game function
   // increment scores for score and high score?
   continueGame = (gameData) => {
