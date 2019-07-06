@@ -1,10 +1,13 @@
 import React from "react";
 import "./style.css";
 
-function Nav () {
+const Nav = props => {
   return (
     <div className="navbar navbar-dark bg-dark">
       <a className="navbar-brand" href="/">Memory Game</a>
+      <div className="score">
+        Score: {props.score} Highscore: {props.highScore}
+      </div>
     </div>
   );
 }

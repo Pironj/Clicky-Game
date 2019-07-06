@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function Jumbotron() {
+const Header= () => {
   return (
     <nav className="jumbotron jumbotron-fluid">
       <div className="container">
@@ -12,4 +12,4 @@ function Jumbotron() {
   );
 }
 
-export default Jumbotron;
+export default Header;
