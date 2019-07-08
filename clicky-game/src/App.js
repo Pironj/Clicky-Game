@@ -41,6 +41,7 @@ class App extends Component {
     if (correctGuess) {
       this.continueGame(newGameData);
     } else {
+      console.log("already clicked");
       this.endGame(newGameData);
     }
   }
@@ -49,12 +50,11 @@ class App extends Component {
   // alert the user - like game over
   // reset their current score to 0 and gamedata to be reset/make all clicked properties to be false
   endGame = (gameData) => {
-    const { score } = this.state;
+    alert("Woops you already clicked that character. Game Over");
+    // let correctGuess = 
     let newScore = 0;
-    newScore = score;
     const newShuffledGameData = gameData;
     this.shuffle(newShuffledGameData);
-
     this.setState({
       GameData: newShuffledGameData,
       score: newScore
